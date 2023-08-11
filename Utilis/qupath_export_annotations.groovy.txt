@@ -86,8 +86,8 @@ def saveImages(def images, def labels, def name) {
     mkdirs( source_folder.getAbsolutePath() )
     mkdirs( target_folder.getAbsolutePath() )
     
-    IJ.save( images , new File ( source_folder, name ).getAbsolutePath())
-    IJ.save( labels , new File ( target_folder, name ).getAbsolutePath())
+    IJ.save( images , new File ( source_folder, name ).getAbsolutePath()+'.tif' )
+    IJ.save( labels , new File ( target_folder, name ).getAbsolutePath()+'.tif' )
 
 }
 
